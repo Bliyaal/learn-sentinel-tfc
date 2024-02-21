@@ -1,14 +1,15 @@
-variable "region" {
-  description = "AWS region"
-  default = "us-west-1"
+variable "client_id" {
+  type = string
 }
 
-variable "instance_type" {
-  description = "Type of EC2 instance to provision"
-  default = "t2.micro"
+variable "client_secret" {
+  type = string
 }
 
-variable "instance_name" {
-  description = "EC2 instance name"
-  default = "Provisioned by Terraform"
+variable "tenant_id" {
+  type = string
+}
+
+variable "subscription_id" {
+  type = string
 }
